@@ -90,14 +90,48 @@ main > section {
 .text1 {
     font-weight: 400;
 }
-
-
-
+.fact-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.icon-item {
+    border: 2px solid #FF900E;
+    height: 241px;
+    width: 241px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.item-text {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.icon-item p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.fact-info {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.fact-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.fact-sub-title {
+    margin-top: 20px;
+    font-size: 1rem;
+}
 @media screen and (max-width: 576px) {
     .navber, 
     .nav-links,
     .banner,
-    .quick-section {
+    .quick-section,
+    .fact-section {
         flex-direction: column;
     }
     .quick-description {
